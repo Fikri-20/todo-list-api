@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
-app.use("/", authRoute);
-app.use("/todos", todoRoute);
+app.use("/", authRouter);
+app.use("/todos", todoRouter);
 
 app.listen(PORT);
